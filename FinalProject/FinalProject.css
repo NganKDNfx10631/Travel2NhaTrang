@@ -1,0 +1,101 @@
+
+/* @font-face{
+    font-family: Open Sans;
+    src:url("FinalProject/f");
+ } */
+.col-lg-4{
+    margin-top: 30px;
+}
+.col-lg-2{
+    padding: 0px;
+}
+.title{
+    color: rgb(68, 166, 211);
+    font-size: 36px;
+    text-align: center;
+    margin-top: 10px;
+}
+.title1{
+    color: rgb(68, 166, 211);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+hr{
+    height: 500px;
+}
+hr.style-one {
+    border: 0;
+    /* height: 600px; */
+    background: #333333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+    width: 100%;
+    text-align: center;
+}
+.thumbnail{
+    height: 1500px;
+}
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+    width: 100%;
+    text-align: center;
+    color: blanchedalmond;
+}
+
+h4{
+    text-align: center;
+}
+p{
+    margin-top: 20px;
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+} 
+#panel {
+    display: none;
+}
+#flip{
+    text-align: center;
+    padding-top: 10px;
+    width: 20%;
+    height: 40px;
+    margin-left: 40%;
+    border: solid 1px #c3c3c3;
+    background-color: pink;
+    font-family: 'Playfair Display', serif;
+}
+img{
+    margin-top: 20px;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+}
+h5{
+    font-family: 'Playfair Display', serif;
+}
+.caption{
+    height: 250px;
+}
+h3{
+    font-family: 'Playfair Display', serif;
+    color: rgb(68, 166, 211);
+    font-size: 20px;
+    text-align: center;
+}
+.follow{
+    text-align: center;
+    padding: 0px;
+}
+
+footer{
+    background-image: url(image/footer_5.jpg);
+    
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nha Trang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Danh sách địa điểm du lịch"> 
+  <meta name="keywords" content="Nha Trang, Thành phố biển, Thành phố biển du lịch, Khánh Hoà">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel = "preconnect" href = "https://fonts.gstatic.com">
+  <link href = "https://fonts.googleapis.com/css2? family = Playfair + Display: ital, wght @ 1.600 & display = swap "rel =" stylesheet ">
+  <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="FinalProject.css">
+  <script language="javascript" type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="https://danhba.httlvn.org/Scripts/iframe-resizer/iframeResizer.js" ></script>
+  <script type="application/javascript">
+
+    function resizeIFrameToFitContent( iFrame ) {
+    
+        iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
+        iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+    }
+    
+    window.addEventListener('DOMContentLoaded', function(e) {
+    
+        var iFrame = document.getElementById( 'iFrame1' );
+        resizeIFrameToFitContent( iFrame );
+    
+        // or, to resize all iframes:
+        var iframes = document.querySelectorAll("iframe");
+        for( var i = 0; i < iframes.length; i++) {
+            resizeIFrameToFitContent( iframes[i] );
+        }
+    } );
+    
+    </script>
+</head>
+<body>
+
+    <!-- banner -->
+<div class="container-fluid">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Gói cho các trang trình bày -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="image/banner.jpg" alt="Nha Trang" style="width:100%;height: 400px;">
+        <div class="carousel-caption">
+          <h1>Nha Trang</h1>
+          <h4><kbd>Is always so much fun!</kbd></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Thanh điều hướng -->
+<nav class="navbar nav-tabs navbar-inverse navbar-fixed-top ">
+    <div class="container-fluid ">
+      <div class="navbar-header">
+       <!-- Thu gọn thanh điều hướng  -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+        </button>
+        <!-- Logo -->
+        <a class="navbar-brand" href="#home" data-toggle="pill" title="Logo" onClick="topFunction();">
+            <img src="image/logo_2.jpg"  style="height: 255%;width: auto;margin: -15px 0px 0px -15px;">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav nav-pills">    
+          <li>
+            <a href="home.html" onClick="topFunction();" target="content">TRANG CHỦ</a>
+          </li>
+          <li class="dropdown" class="active">
+            
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >DANH MỤC<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="page1.html" onClick="topFunction();" target="content">Biển Nha Trang</a></li>
+              <li><a href="page2.html" onClick="topFunction();" target="content">Chùa Long Sơn</a></li>
+              <li><a href="page3.html" onClick="topFunction();" target="content">Tháp Bà Ponagar</a></li>
+              <li><a href="page4.html" onClick="topFunction();" target="content">Nhà Thờ Núi</a></li>
+              <li><a href="page5.html" onClick="topFunction();" target="content">Bảo Tàng Alexndre Yersin</a></li>
+            </ul>
+          </li>
+          <li>
+            <!-- <a data-toggle="pill" href="#" onClick="topFunction();">Liên Hệ</a> -->
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >LIÊN HỆ<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://www.facebook.com/profile.php?id=100064125977050" data-toggle="tooltip" title="Facebook"><i class="fab fa-facebook"> Facebook</i></a></li>
+              <li><a href="#" data-toggle="tooltip" title="Google"><i class="fab fa-google-plus-g"> Email</i></a></li>
+              <li><a href="#" data-toggle="tooltip" title="instagram"><i class="fab fa-instagram"> Instargam</i></a></li>
+            </ul>
+          </li>
+        </ul>
+        
+         
+      </div>
+    </div>
+</nav>
+  
+<div class="container">
+  <div class="tab-content">
+    <!-- <div id="iframelive">
+      <iframe src="home.html" style="width:100%; border:none;" name="content"></iframe>
+      </div> -->
+    <iframe  id="iFrame1"  src="home.html" name="content" width="100%"  frameborder="0" 
+    scrolling="no" height="1510px">
+
+    </iframe> 
+
+
+</div>
+</div>
+
+
+<footer class="container-fluid text-center">
+  <h1 style="color: white;">Contact us</h1>
+  <ol class="follow">
+    <th><a href="https://www.facebook.com/profile.php?id=100064125977050" data-toggle="tooltip" title="Facebook"><i class="fab fa-facebook" style="color: white;"></i> Facebook</a></th>
+    <th><a href="#" data-toggle="tooltip" title="Youtube"><i class="fab fa-youtube" style="padding-left: 10px;color: white;"></i> Youtube</a></th>
+    <th><a href="#" data-toggle="tooltip" title="Google"><i class="fab fa-google-plus-g" style="padding-left: 10px;color: white;"></i> Google</a></th>
+    <th><a href="#" data-toggle="tooltip" title="instagram"><i class="fab fa-instagram" style="padding-left: 10px;color: white;"></i> instagram </a></th>
+  </ol>
+  <div class="row">
+    <div class="col-lg-6">
+      <h5 style="color: rgb(255, 255, 255); font-size: 20px;font-weight: bold;">Hotline</h5>
+      <hr class="style-two">
+				<p style="color: rgb(255, 255, 255);font-size: 20px;font-weight: bold;">111-222-3333</p>
+        <p style="color: rgb(255, 255, 255);font-size: 20px;font-weight: bold;"></p>
+				<p style="color: rgb(248, 248, 248);font-size: 20px;font-weight: bold;">Khanh Hoa, Nha Trang</p>
+    </div>
+    <div class="col-lg-6">
+      <h5 style="color: rgb(255, 255, 255);font-size: 20px;font-weight: bold;">Working hours</h5>
+      <hr class="style-two">
+				<p style="color: rgb(255, 255, 255);font-size: 20px;font-weight: bold;">Monday-Friday: 8am - 10pm</p>
+				<p style="color: rgb(255, 255, 255);font-size: 20px;font-weight: bold;">Weekend: 8am - 12am</p>
+    </div>
+  </div>
+  <hr class="style-two">
+  <h4 style="font-weight: bold;font-size: 20px;color: aliceblue;"><small>Bản quyền © 2021 . Đã đăng ký bản quyền.</small></h4>
+  <br>
+</footer>
+  <!-- go to top of the Web when you touch on the thanh điều hướng -->
+<script>
+  function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
